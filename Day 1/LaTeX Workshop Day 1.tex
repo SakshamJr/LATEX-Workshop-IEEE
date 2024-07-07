@@ -1,0 +1,119 @@
+\documentclass[titlepage, 12pt]{article} 
+% [titlepage] makes separate title page
+\usepackage[margin=1in]{geometry}
+\usepackage{times}
+\usepackage{setspace}
+\usepackage{amsmath}
+\renewcommand{\frac}[2]{\left(\dfrac{#1}{#2}\right)} 
+% automate the \frac to \dfrac and include right and left brackets
+% $\left[..\right]$ le thulo bracket banauxa
+
+\title{My First LaTeX Document}
+
+\author{Saksham Sapkota}
+
+\date{\today}
+
+\begin{document}
+	\maketitle
+	\tableofcontents 
+	% automatically creates table of contents including the sections and subsections
+	\pagebreak
+	\section{Introduction} 
+	A \emph{Neural Network} is a method in artificial intelligence that teaches computers to process data in a way that is inspired by the human brain. It is a type of machine learning process, called \emph{Deep Learning}, that uses interconnected nodes or neurons in a layered structure that resembles the human brain. It creates an adaptive system that computers use to learn from their mistakes and improve continuously. Thus, artificial neural networks attempt to solve complicated problems, like summarizing documents or recognizing faces, with greater accuracy.
+	% remove * before { for section number
+		\subsection {Uses of Neural Networks}
+			\subsubsection{Computer Vision}
+			Computer vision is the ability of computers to extract information and insights from images and videos. With neural networks, computers can distinguish and recognize images similar to humans. Computer vision has several applications, such as the following:
+			\begin{itemize}
+				\item Visual recognition in self-driving cars so they can recognize road signs and other road users
+				\item Content moderation to automatically remove unsafe or inappropriate content from image and video archives
+				\item Facial recognition to identify faces and recognize attributes like open eyes, glasses, and facial hair
+				\item Image labeling to identify brand logos, clothing, safety gear, and other image details
+			\end{itemize}
+			
+			\subsubsection {Speech Recognition}
+			Neural networks can analyze human speech despite varying speech patterns, pitch, tone, language, and accent. Virtual assistants like Amazon Alexa and automatic transcription software use speech recognition to do tasks like these:
+			\begin{itemize}
+				\item Assist call center agents and automatically classify calls
+				\item Convert clinical conversations into documentation in real time
+				\item Accurately subtitle:
+				\begin{itemize}
+					\item videos
+					\item meeting recordings
+					\begin{enumerate}
+						\item wider
+						\item content
+						\item reach
+					\end{enumerate}
+				\end{itemize}
+			\end{itemize}
+			
+			\subsubsection{Natural Language Processing}
+			Natural language processing (NLP) is the ability to process natural, human-created text. Neural networks help computers gather insights and meaning from text data and documents. NLP has several use cases, including in these functions:
+			
+			Automated virtual agents and chatbots
+			Automatic organization and classification of written data
+			Business intelligence analysis of long-form documents like emails and forms
+			Indexing of key phrases that indicate sentiment, like positive and negative comments on social media
+			Document summarization and article generation for a given topic
+			\subsubsection{Recommendation Engine}
+			Neural networks can track user activity to develop personalized recommendations. They can also analyze all user behavior and discover new products or services that interest a specific user. For example, Curalate, a Philadelphia-based startup, helps brands convert social media posts into sales. Brands use Curalate’s intelligent product tagging (IPT) service to automate the collection and curation of user-generated social content. IPT uses neural networks to automatically find and recommend products relevant to the user’s social media activity. Consumers don't have to hunt through online catalogs to find a specific product from a social media image. Instead, they can use Curalate’s auto product tagging to purchase the product with ease.
+			\subsection{How do neural networks work?}
+			Font Size Text Formatting\\
+			{\tiny Tiny}
+			{\scriptsize ScriptSize}
+			{\footnotesize FootNoteSize}
+			{\small Small}
+			{\normalsize Normal}
+			{\large large}
+			{\Large Large}
+			{\LARGE LARGE}
+			{\huge huge}
+			{\Huge Huge}
+			\\
+			\\
+			Text Formatting\\
+			\textbf{Bold}
+			\texttt{TypeWriter}
+			\textit{Italic}
+	\begin{center}
+		{\Huge Center Align!}
+	\end{center}
+	\begin{flushleft}
+		{\Huge FlushLeft!}
+	\end{flushleft}
+	\begin{flushright}
+		{\Huge FlushRight!}
+	\end{flushright}
+	\begin{doublespace}{This shows Double Spacing Example\\}
+	\end{doublespace}
+	% \onehalfspacing This shows Double Spacing Example
+	{\Large\textbf{Items:}}
+	\begin{itemize}
+		\item Saksham
+		\item Supreme
+		\item Aayush \\
+	\end{itemize}
+	\emph{\Large\textbf{Emphasized}}
+	{\Large{Text}}
+	\\
+	{\Huge\textbf{Maths in LaTeX}}
+	\\
+	\emph{$x = y$ \\
+		This $\frac{4}{5}$ is a fraction. \\
+		asafakhfajka\[\dfrac{4}{5}\]
+		asafakhfajka\(\frac{4}{5}\)}
+	
+	
+	\begin{align}
+		E &= mc^2 \\
+		E &= mc^2 x \\
+		E &= mc^{2x} \\
+		E_{body} &= m_{body}.c^2 \\
+		e^{i\pi} + 1 &= 0 
+	\end{align}
+	
+	\end{document}
+	
+\end{document}

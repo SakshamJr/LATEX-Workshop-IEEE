@@ -1,0 +1,46 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath, amssymb}
+\usepackage{listings}
+\usepackage{minted}
+\usepackage{xcolor}
+
+\lstdefinestyle{mystyle}{
+	language=Python,
+	basicstyle=\ttfamily\small,
+	keywordstyle=\color{green},
+	stringstyle=\color{red},
+	commentstyle=\color{blue},
+	backgroundcolor=\color{lightgray!15},
+	frame=single,
+	breaklines=true,
+	showstringspaces=false,
+	numbers=left,
+	numberstyle=\tiny\color{gray},
+}
+
+\begin{document}
+%	\begin{lstlisting}[language=Python, basicstyle=\small\ttfamily]
+%import numpy as np
+%		import pandas as pd
+%		import matplotlib.pyplot as plt
+%		%matplotlib inline
+%			
+%		train_df = pd.read_csv('train.csv')
+%		train_df.head()
+%		train_df['LoanPurpose'].value_counts()
+%		columns_to_encode = ['Education', 'EmploymentType', 'MaritalStatus', 'HasMortgage', 'HasDependents', 'LoanPurpose', 'HasCoSigner']
+%		# Perform One-Hot Encoding
+%		train_df_encoded = pd.get_dummies(train_df, columns=columns_to_encode)
+%			
+%		# Display the first few rows of the new DataFrame
+%		train_df_encoded.head()
+%		train_df_encoded.drop('LoanID',axis=1).corr()['Default'].sort_values(ascending=False)
+%		train_df_clean = train_df_encoded.drop(['LoanID','Education_PhD','EmploymentType_Full-time',
+%		'MaritalStatus_Single','HasMortgage_Yes','HasDependents_Yes',
+%		'LoanPurpose_Auto','HasCoSigner_Yes'],axis=1)
+%		# y_train = train_df_encoded['Default']
+%	\end{lstlisting}
+
+\lstinputlisting[style = mystyle, language=C]{"C:/Users/jrsak/OneDrive/Documents/Computer Graphics Lab/Lab 1/LAB 1 DDA.CPP"}
+\end{document}
